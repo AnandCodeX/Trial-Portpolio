@@ -1,0 +1,14 @@
+.introduction {
+  display: inline-block;
+  width: 60vw;
+  height: auto;
+  margin: 70px auto auto;
+}
+
+.introTxt {
+  position: absolute;
+  padding-top: 6rem;
+}
+
+.ProImg {
+}

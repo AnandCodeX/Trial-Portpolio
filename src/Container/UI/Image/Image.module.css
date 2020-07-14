@@ -1,0 +1,17 @@
+.profilePic {
+  display: inline-block;
+  position: relative;
+  left: 65vw;
+  right: 0px;
+  top: 15vh;
+}
+
+.profilePic img {
+  display: inline-flexbox;
+  float: right;
+  max-width: 300px;
+  width: 18vw;
+  height: auto;
+  border-radius: 15px;
+  filter: grayscale(90%);
+}

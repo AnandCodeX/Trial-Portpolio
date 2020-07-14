@@ -1,0 +1,42 @@
+label {
+  padding: 0px;
+  margin: 0px;
+}
+
+.alphabet {
+  font-family: Georgia;
+  display: inline-flex;
+  justify-content: center;
+  padding: 0px;
+  margin: 0px;
+}
+
+.alphabet:hover {
+  animation: updown 700ms ease-out 0s 1 normal none;
+}
+
+@keyframes updown {
+  0% {
+    -webkit-transform: scale(1, 1);
+  }
+  25% {
+    -webkit-transform: scale(1, 1.25);
+    animation-duration: 150ms;
+    animation-timing-function: ease-in;
+  }
+  50% {
+    -webkit-transform: scale(0.95, 0.75);
+    animation-duration: 150ms;
+    animation-timing-function: linear;
+  }
+  75% {
+    -webkit-transform: scale(1.05, 1.25);
+    animation-duration: 150ms;
+    animation-timing-function: linear;
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+    animation-duration: 150ms;
+    animation-timing-function: ease-out;
+  }
+}
