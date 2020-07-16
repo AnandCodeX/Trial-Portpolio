@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <Layout />
-      <Alphabet style={{ fontSize: "25px", textAlign: "center" }}>h</Alphabet>
+      
     </div>
   );
 }

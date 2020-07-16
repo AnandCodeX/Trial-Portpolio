@@ -1,15 +1,15 @@
 .card {
-  padding: 1rem;
+  padding: 5%;
   border-radius: 5px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
 }
 
 .intro {
-  margin: auto auto auto 50px;
-  padding: 20px;
+  margin: inherit;
+  padding: inherit;
 
-  width: 40vw;
-  height: auto;
+  width: inherit;
+  height: inherit;
 }
 .intro h1{
   color: white;

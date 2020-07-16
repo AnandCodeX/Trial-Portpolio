@@ -1,16 +1,14 @@
 .profilePic {
-  display: inline-block;
-  position: relative;
-  left: 65vw;
-  right: 0px;
-  top: 15vh;
+  display: inherit;
+  position: inherit;
+  width: inherit;
+
 }
 
 .profilePic img {
-  display: inline-flexbox;
-  float: right;
-  max-width: 300px;
-  width: 18vw;
+  display:inherit;
+  max-width: inherit;
+  width: inherit;
   height: auto;
   border-radius: 15px;
   filter: grayscale(90%);
