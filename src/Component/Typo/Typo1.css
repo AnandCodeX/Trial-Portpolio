@@ -1,28 +1,33 @@
 @media only screen and (min-width: 800px) {
   .typo1 {
     font-size: 40px;
+    color: white;
   }
   .Name {
     font-size: 50px;
+    color: rgb(255, 136, 0);
   }
 }
 
 @media only screen and (min-width: 500px) {
   .typo1 {
     font-size: 30px;
+    color: white;
   }
-
   .Name {
     font-size: 40px;
+    color: rgb(255, 136, 0);
   }
 }
 
 @media only screen and (max-width: 499px) {
   .typo1 {
     font-size: 30px;
+    color: white;
   }
 
   .Name {
     font-size: 40px;
+    color: rgb(255, 136, 0);
   }
 }

@@ -13,6 +13,7 @@ label {
 
 .alphabet:hover {
   animation: updown 700ms ease-out 0s 1 normal none;
+  color:rgb(0, 255, 128);
 }
 
 @keyframes updown {
