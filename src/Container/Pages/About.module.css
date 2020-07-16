@@ -1,0 +1,179 @@
+.about {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}
+@media only screen and (min-width: 1050px) {
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 40px;
+    width: 85vw;
+    height: 100vh;
+    margin: auto;
+  }
+
+  /* Hnames css styling */
+  .Hnames {
+    position: relative;
+    top: -25vh;
+    left: -36vh;
+    font-size: 8rem;
+  }
+
+  /* Card css styling */
+  .Card {
+    position: absolute;
+    max-width: 55vw;
+    background-color: rgb(49, 49, 49);
+    z-index: 2;
+  }
+
+  .Card p {
+    text-align: justify;
+    max-width: 60vw;
+    color: ivory;
+  }
+
+  /* Dots css styling */
+
+  .Dots {
+    position: relative;
+    bottom: -20vh;
+    right: -32vh;
+  }
+}
+
+@media only screen and (min-width: 850px) and (max-width: 1049px) {
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -100px;
+    left: -50px;
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+  }
+
+  /* Hnames css styling */
+  .Hnames {
+    position: relative;
+    top: -29vh;
+    left: -6vw;
+    font-size: 4rem;
+  }
+
+  /* Card css styling */
+  .Card {
+    position: absolute;
+    max-width: 80vw;
+    max-height: 300px;
+    background-color: rgb(49, 49, 49);
+    z-index: 2;
+  }
+
+  .Card p {
+    text-align: justify;
+    font-size: 14px;
+    max-width: 70vw;
+    color: ivory;
+  }
+
+  /* Dots css styling */
+
+  .Dots {
+    position: relative;
+    bottom: -15vh;
+    right: -15vw;
+  }
+}
+
+@media only screen and (min-width: 575px) and (max-width: 849px) {
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: -50px;
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+  }
+
+  /* Hnames css styling */
+  .Hnames {
+    position: relative;
+    top: -25vh;
+    left: -6vw;
+    font-size: 4rem;
+  }
+
+  /* Card css styling */
+  .Card {
+    position: absolute;
+    max-width: 80vw;
+    max-height: 300px;
+    background-color: rgb(49, 49, 49);
+    z-index: 2;
+  }
+
+  .Card p {
+    text-align: justify;
+    font-size: 14px;
+    max-width: 70vw;
+    color: ivory;
+  }
+
+  /* Dots css styling */
+
+  .Dots {
+    position: relative;
+    bottom: -15vh;
+    right: -15vw;
+  }
+}
+
+@media only screen and (max-width: 574px) {
+  .content {
+    width: 100vw;
+    height: auto;
+    margin: auto;
+  }
+
+  /* Hnames css styling */
+  .Hnames {
+    display: block;
+    font-size: 4rem;
+    margin: 6vh 0 0 10px;
+  }
+
+  /* Card css styling */
+  .Card {
+    display: block;
+    margin: auto;
+    max-width: 90vw;
+    max-height: 60vh;
+    overflow-y: scroll;
+    background-color: rgb(49, 49, 49);
+    z-index: 0;
+    padding-top: 0px;
+  }
+
+  .Card p {
+    font-size: 13px;
+    margin-top: 0px;
+    max-width: 85vw;
+    text-align: justify;
+    color: ivory;
+  }
+
+  /* Dots css styling */
+
+  .Dots {
+    display: none;
+  }
+}

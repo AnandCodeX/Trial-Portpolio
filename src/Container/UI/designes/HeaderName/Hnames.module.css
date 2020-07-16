@@ -1,0 +1,13 @@
+.hnames {
+    position: inherit;
+  width: inherit;
+  z-index: -1;
+  font-size: inherit;
+}
+
+.hnames span {
+  font-size: inherit;
+  font-weight: bold;
+  color: gray;
+  opacity: 30%;
+}

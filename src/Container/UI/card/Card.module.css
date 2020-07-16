@@ -1,7 +1,8 @@
 .card {
-  padding: 5%;
+  padding: 2%;
   border-radius: 5px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.26);
+  z-index: 1;
 }
 
 .intro {
@@ -11,12 +12,12 @@
   width: inherit;
   height: inherit;
 }
-.intro h1{
+.intro h1 {
   color: white;
 }
-.intro p{
+.intro p {
   color: rgb(124, 124, 124);
 }
-.intro span{
+.intro span {
   color: rgb(255, 136, 0);
 }

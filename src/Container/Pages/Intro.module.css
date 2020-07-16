@@ -2,16 +2,17 @@
   .introduction {
     display: inline-block;
     position: relative;
-    top: 10vh;
-    left: 4vw;
     width: 100vw;
     height: 100vh;
     margin: auto;
+    padding-top: 10vh;
   }
 
   .introTxt {
     display: inline-block;
     position: relative;
+
+    left: 4vw;
     width: 50vw;
     vertical-align: middle;
     padding: 2%;
@@ -20,6 +21,7 @@
   .ProImg {
     display: inline-block;
     position: relative;
+
     width: 250px;
     vertical-align: middle;
     padding: 2vw;
@@ -27,7 +29,7 @@
   }
 }
 
-@media only screen and (min-width: 5px) and (max-width: 850px) {
+@media only screen and (min-width: 575px) and (max-width: 850px) {
   .introduction {
     display: inline-block;
     position: relative;
@@ -54,30 +56,54 @@
   }
 }
 
-@media only screen and (max-width: 574px) {
+@media only screen and (min-width: 350px) and (max-width: 574px) {
   .introduction {
-    overflow-y: scroll;
     display: block;
     width: 100vw;
     min-width: 385px;
-    height: 100%;
+    height: auto;
     margin: Auto;
   }
 
   .introTxt {
     display: block;
     position: relative;
-    top: 10px;
     margin: auto;
-    min-width: 385px;
+    min-width: 300px;
     width: 90vw;
-    padding: 7.5px 7.5px 7.5px 10px;
+    padding: 1vw 1vw 1vw 1.25vw;
   }
 
   .ProImg {
     display: block;
     position: relative;
-    top: 10px;
+    margin: auto;
+    width: 80vw;
+    max-width: 385px;
+  }
+}
+
+@media only screen and (max-width: 349px) {
+  .introduction {
+    display: block;
+    width: 100vw;
+    min-width: 275px;
+    height: auto;
+    margin: Auto;
+  }
+
+  .introTxt {
+    display: block;
+    position: relative;
+    margin: auto;
+    min-width: 275px;
+    width: 85vw;
+    padding: 1vw 1vw 1vw 1vw;
+  }
+
+  .ProImg {
+    display: block;
+    position: relative;
     margin: auto;
     width: 80vw;
     max-width: 385px;

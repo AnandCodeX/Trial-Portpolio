@@ -1,0 +1,14 @@
+.dots {
+  position: inherit;
+  z-index: -1;
+}
+
+.dots span {
+  pointer-events: none;
+  display: inline;
+  color: rgba(255, 123, 0, 0.664);
+  font-size: 50px;
+  line-height: 0px;
+  padding: 0 5px;
+  margin: 0 5px;
+}
