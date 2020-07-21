@@ -63,8 +63,8 @@
   .Hnames {
     position: relative;
     top: -29vh;
-    left: -6vw;
-    font-size: 4rem;
+    left: -7vw;
+    font-size: 6rem;
   }
 
   /* Card css styling */
@@ -108,7 +108,7 @@
   .Hnames {
     position: relative;
     top: -25vh;
-    left: -6vw;
+    left: -2vw;
     font-size: 4rem;
   }
 

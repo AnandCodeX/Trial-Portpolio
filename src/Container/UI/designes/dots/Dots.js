@@ -6,7 +6,7 @@ import styles from "./Dots.module.css";
 const Hnames = (props) => {
   return (
     <Auxi>
-      <div className={styles.dots}>
+      <div className={styles.dots} >
         <div>
           <span>.</span>
           <span>.</span>

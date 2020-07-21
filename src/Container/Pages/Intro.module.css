@@ -21,11 +21,10 @@
   .ProImg {
     display: inline-block;
     position: relative;
-
     width: 250px;
     vertical-align: middle;
     padding: 2vw;
-    margin: 0 5vw;
+    margin: 0 0 0 10vw;
   }
 }
 

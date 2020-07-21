@@ -1,11 +1,12 @@
 .hnames {
-    position: inherit;
+  position: inherit;
   width: inherit;
   z-index: -1;
   font-size: inherit;
 }
 
 .hnames span {
+  user-select: none;
   font-size: inherit;
   font-weight: bold;
   color: gray;

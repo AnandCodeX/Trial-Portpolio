@@ -1,0 +1,9 @@
+.btnCard {
+  width: 100vw;
+  height: auto;
+}
+
+.bttn {
+  display: flex;
+  justify-content: space-evenly;
+}

@@ -4,6 +4,8 @@ import styles from "./Layout.module.css";
 import Navbar from "../../Component/Navbar/Navbar";
 import Intro from "../Pages/Intro";
 import About from "../Pages/About";
+import Skills from "../Pages/Skills";
+import Work from "../Pages/Work";
 
 const Layout = (props) => {
   return (
@@ -12,6 +14,8 @@ const Layout = (props) => {
         <Navbar />
         <Intro />
         <About />
+        <Skills />
+        <Work />
       </div>
     </Auxi>
   );

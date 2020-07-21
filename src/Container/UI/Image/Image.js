@@ -8,7 +8,7 @@ const image = (props) => {
   return (
     <Auxi>
       <div className={styles.profilePic}>
-        <img className="img-thumbnail" src={props.pic} alt="ProfilePic" />
+        <img className="img" src={props.pic} alt="ProfilePic" />
       </div>
     </Auxi>
   );

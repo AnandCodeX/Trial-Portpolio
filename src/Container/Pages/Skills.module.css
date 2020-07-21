@@ -1,0 +1,64 @@
+@media only screen and (min-width: 551px) {
+  .skills {
+    margin: 0;
+    position: relative;
+    bottom: 100px;
+  }
+
+  .data {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100vw;
+    position: relative;
+    /* top: 10vh; */
+  }
+  .center {
+    height: 300px;
+    max-width: 70vw;
+    min-height: 400px;
+  }
+  .bar {
+    min-width: 100vw;
+  }
+  .hnames {
+    float: right;
+    margin: 0 8vw 0 0;
+    font-size: 8rem;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .skills {
+    margin: 0;
+  }
+
+  .data {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    width: 100vw;
+    position: relative;
+    /* top: 10vh; */
+  }
+  .center {
+    height: 100vh;
+    max-width: 85vw;
+    min-height: 600px;
+  }
+  .center p {
+    color: rgb(240, 251, 255);
+    font-size: 14px;
+    text-align: justify;
+  }
+  .bar {
+    min-width: 100vw;
+  }
+  .hnames {
+    float: left;
+    margin-left: 10px;
+    font-size: 4rem;
+  }
+}
