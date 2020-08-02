@@ -4,21 +4,31 @@ import { Consumer } from "../../../../context/Context";
 import classes from "./NavigationItems.module.css";
 import NavigationItem from "./NavigationItem/NavigationItem";
 import Auxi from "../../../../hoc/Auxi/Auxi";
+import About from "../../../../Container/Pages/About";
 
 const NavigationItems = (props) => {
-  const [state, setState] = useState(false);
-  const activatedAbout = (event) => {
-    event === true ? setState(true) : setState(false);
+  const [state, setState] = useState({
+    about: false,
+    skills: false,
+    work: false,
+    contact: false,
+  });
+
+  const activated = (event, id) => {
+    if (id === "ABOUT" && event===true) {
+      setState({ about: true,skills:false,work:false,contact:false });
+    }
+    if (id === "SKILLS" && event === true) {
+      setState({ about: false, skills: true, work: false, contact: false });
+    }
+    if (id === "WORK" && event === true) {
+      setState({ about: false, skills: false, work: true, contact: false });
+    }
+    if (id === "CONTACT" && event === true) {
+      setState({ about: false, skills: false, work: false, contact: true });
+    }
   };
-  const activatedSkills = (event) => {
-    event === true ? setState(true) : setState(false);
-  };
-  const activatedWork = (event) => {
-    event === true ? setState(true) : setState(false);
-  };
-  const activatedContact = (event) => {
-    event === true ? setState(true) : setState(false);
-  };
+
   return (
     <Auxi>
       <Consumer>
@@ -26,30 +36,34 @@ const NavigationItems = (props) => {
           <div>
             <ul className={classes.NavigationItems}>
               <NavigationItem
-                active={state}
+                id="ABOUT"
+                active={state.about}
                 link={allID.about}
-                isOn={activatedAbout}
+                isOn={activated}
               >
                 ABOUT
               </NavigationItem>
               <NavigationItem
-                active={state}
+                id="SKILLS"
+                active={state.skills}
                 link={allID.skills}
-                isOn={activatedSkills}
+                isOn={activated}
               >
                 SKILLS
               </NavigationItem>
               <NavigationItem
-                active={state}
+                id="WORK"
+                active={state.work}
                 link={allID.work}
-                isOn={activatedWork}
+                isOn={activated}
               >
                 WORK
               </NavigationItem>
               <NavigationItem
-                active={state}
+                id="CONTACT"
+                active={state.contact}
                 link={allID.contact}
-                isOn={activatedContact}
+                isOn={activated}
               >
                 CONTACT
               </NavigationItem>
