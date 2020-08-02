@@ -1,0 +1,47 @@
+:root {
+  --mainTransition: all 0.3s linear;
+  --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
+  --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+.cardBody {
+  display: inline-flex;
+  justify-content: space-evenly;
+
+  min-width: 300px;
+}
+
+.room {
+  box-shadow: var(--lightShadow);
+  transition: var(--mainTransition);
+}
+.room:hover {
+  box-shadow: var(--darkShadow);
+}
+
+.imgContainer {
+  position: relative;
+}
+.imgContainer img {
+  width: 20vw;
+  display: block;
+  transition: var(--mainTransition);
+}
+
+.imgContainer:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+.imgContainer:hover img {
+  opacity: 0.3;
+}
+.imgContainer:hover .price-top {
+  opacity: 0;
+}
+.imgContainer:hover .room-link {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.imgModal {
+  max-width: 80vw;
+  width: 80vw;
+}

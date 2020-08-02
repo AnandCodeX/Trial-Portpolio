@@ -5,10 +5,15 @@ import Hnames from "../UI/designes/HeaderName/Hnames";
 import Dots from "../UI/designes/dots/Dots";
 import Card from "../UI/card/Card";
 
+
 const About = (props) => {
   return (
     <Auxi>
-      <div className={styles.About}>
+      <div
+        id={props.id}
+        className={styles.About}
+        onLoad={() => props.handleClick(props.id)}
+      >
         <div className={styles.content}>
           <div className={styles.Hnames}>
             <Hnames>About</Hnames>

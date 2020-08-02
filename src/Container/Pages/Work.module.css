@@ -1,9 +1,3 @@
-:root {
-  --mainTransition: all 0.3s linear;
-  --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
-  --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
-}
-
 .work {
   margin-top: -100px;
   width: 100vw;
@@ -13,42 +7,18 @@
 
 .workspace {
   width: 100vw;
-  margin: auto;
+ 
 }
 
 .hnames {
   font-size: 8rem;
   margin-left: 6vw;
+ 
+}
+
+.blocks {
+  width: 80vw;
+  margin: 20px auto;
 }
 
 /* something extra */
-
-.room {
-  box-shadow: var(--lightShadow);
-  transition: var(--mainTransition);
-}
-.room:hover {
-  box-shadow: var(--darkShadow);
-}
-
-.imgContainer {
-  position: relative;
-}
-.imgContainer img {
-  width: 20vw;
-  display: block;
-  transition: var(--mainTransition);
-}
-
-.imgContainer:hover {
-  background: rgba(0, 0, 0, 0.8);
-}
-.imgContainer:hover img {
-  opacity: 0.3;
-}
-.imgContainer:hover .price-top {
-  opacity: 0;
-}
-.imgContainer:hover .room-link {
-  transform: translate(-50%, -50%) scale(1);
-}

@@ -11,7 +11,7 @@ class Navbar extends Component {
   };
   sideDrawerClosedHandler = () => {
     this.setState({
-      showSideDrawer: false
+      showSideDrawer: false,
     });
   };
   sideDrawerToggleHandler = () => {
@@ -23,7 +23,11 @@ class Navbar extends Component {
   render() {
     return (
       <Auxi>
-        <Toolbar drawerToggleClicked={this.sideDrawerToggleHandler} />
+        <Toolbar
+          drawerToggleClicked={this.sideDrawerToggleHandler}
+          intro={this.props.intro}
+         
+        />
         <SideDrawer
           open={this.state.showSideDrawer}
           closed={this.sideDrawerClosedHandler}
