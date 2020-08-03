@@ -4,7 +4,6 @@ import { Consumer } from "../../../../context/Context";
 import classes from "./NavigationItems.module.css";
 import NavigationItem from "./NavigationItem/NavigationItem";
 import Auxi from "../../../../hoc/Auxi/Auxi";
-import About from "../../../../Container/Pages/About";
 
 const NavigationItems = (props) => {
   const [state, setState] = useState({
@@ -15,8 +14,8 @@ const NavigationItems = (props) => {
   });
 
   const activated = (event, id) => {
-    if (id === "ABOUT" && event===true) {
-      setState({ about: true,skills:false,work:false,contact:false });
+    if (id === "ABOUT" && event === true) {
+      setState({ about: true, skills: false, work: false, contact: false });
     }
     if (id === "SKILLS" && event === true) {
       setState({ about: false, skills: true, work: false, contact: false });
