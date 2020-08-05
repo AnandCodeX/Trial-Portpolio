@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Auxi from "../../hoc/Auxi/Auxi";
 import styles from "./Work.module.css";
 import Hnames from "../UI/designes/HeaderName/Hnames";
@@ -25,8 +25,60 @@ import Block from "../UI/WorkBlock/Block";
 import Card from "../UI/card/Card";
 
 const Work = (props) => {
-  const onClickSwitch = (event, id) => {
-     
+  const [state, setState] = useState("WD");
+
+  const wdHandler = () => {
+    setState("WD");
+  };
+  const waHandler = () => {
+    setState("WA");
+  };
+  const rpHandler = () => {
+    setState("RP");
+  };
+
+  const btnSwitch = state;
+  let cardShow;
+  if (btnSwitch === "WD") {
+    cardShow = (
+      <Card>
+        <span>
+          <Block src={Img1} />
+          <Block src={I1} />
+          <Block src={I2} />
+          <Block src={I3} />
+          <Block src={I4} />
+        </span>
+      </Card>
+    );
+  }
+  if (btnSwitch === "WA") {
+    cardShow = (
+      <Card>
+        <span>
+          <Block src={WA1} />
+          <Block src={WA2} />
+          <Block src={WA3} />
+          <Block src={WA4} />
+        </span>
+      </Card>
+    );
+  }
+  if (btnSwitch === "RP") {
+    cardShow = (
+      <Card>
+        <span>
+          <Block src={RP1} />
+          <Block src={RP2} />
+          <Block src={RP3} />
+          <Block src={RP4} />
+          <Block src={RP5} />
+        </span>
+      </Card>
+    );
+  }
+
+  /* const onClickSwitch = (event, id) => {
     if (id === "WD" && event === true) {
       return (
         <Card>
@@ -65,47 +117,8 @@ const Work = (props) => {
         </Card>
       );
     }
-  }; 
-
-  /* const wdHandler = () => {
-    return (
-      <Card>
-        <span>
-          <Block src={Img1} />
-          <Block src={I1} />
-          <Block src={I2} />
-          <Block src={I3} />
-          <Block src={I4} />
-        </span>
-      </Card>
-    );
   };
-  const waHandler = () => {
-    return (
-      <Card>
-        <span>
-          <Block src={WA1} />
-          <Block src={WA2} />
-          <Block src={WA3} />
-          <Block src={WA4} />
-        </span>
-      </Card>
-    );
-  };
-  const rpHandler = () => {
-    return (
-      <Card>
-        <span>
-          <Block src={RP1} />
-          <Block src={RP2} />
-          <Block src={RP3} />
-          <Block src={RP4} />
-          <Block src={RP5} />
-        </span>
-      </Card>
-    );
-  }; */
-
+ */
   return (
     <Auxi>
       <div className={styles.work}>
@@ -116,20 +129,20 @@ const Work = (props) => {
           <div>
             <div className={styles.btnCard}>
               <div className={styles.bttn}>
-                <Bttn clicked={onClickSwitch} id="WD">
+                <Bttn clicked={wdHandler} id="WD">
                   Web Designing
                 </Bttn>
-                <Bttn clicked={onClickSwitch} id="WA">
+                <Bttn clicked={waHandler} id="WA">
                   Web Animation
                 </Bttn>
-                <Bttn clicked={onClickSwitch} id="RP">
+                <Bttn clicked={rpHandler} id="RP">
                   React Projects
                 </Bttn>
               </div>
             </div>
           </div>
 
-          <div className={styles.blocks}>{onClickSwitch()}</div>
+          <div className={styles.blocks}>{cardShow}</div>
         </div>
       </div>
     </Auxi>

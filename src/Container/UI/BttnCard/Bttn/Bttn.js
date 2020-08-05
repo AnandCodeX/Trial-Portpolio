@@ -6,7 +6,7 @@ const Bttn = (props) => {
   return (
     <button
       type="button"
-      id={props.id} 
+      id={props.id}
       onClick={() => {
         props.clicked(true, props.id);
       }}

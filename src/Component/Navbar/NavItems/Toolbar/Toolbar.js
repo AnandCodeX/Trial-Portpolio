@@ -17,6 +17,7 @@ const Toolbar = (props) => (
       }}
       link={props.intro}
       active
+      isOn={(event, id) => (id = "intro")}
     >
       Anand
     </NavigationItem>

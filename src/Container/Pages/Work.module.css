@@ -3,10 +3,13 @@
   width: 100vw;
   min-height: 800px;
   height: auto;
+  top: -7vh;
 }
 
 .workspace {
   width: 100vw;
+  position: relative;
+  top: -7vh;
 }
 
 .hnames {
