@@ -6,7 +6,10 @@ const Bttn = (props) => {
   return (
     <button
       type="button"
-      onClick={props.clicked}
+      id={props.id} 
+      onClick={() => {
+        props.clicked(true, props.id);
+      }}
       className={[styles.Button, styles[props.btnType]].join(" ")}
     >
       {props.children}

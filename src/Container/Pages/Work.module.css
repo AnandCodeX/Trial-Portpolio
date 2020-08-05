@@ -1,5 +1,5 @@
 .work {
-  margin-top: -100px;
+  position: relative;
   width: 100vw;
   min-height: 800px;
   height: auto;
@@ -7,13 +7,11 @@
 
 .workspace {
   width: 100vw;
- 
 }
 
 .hnames {
-  font-size: 8rem;
+  font-size: 10vw;
   margin-left: 6vw;
- 
 }
 
 .blocks {
@@ -21,4 +19,20 @@
   margin: 20px auto;
 }
 
-/* something extra */
+.blocks span {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/* Switching Btn Css  */
+
+.btnCard {
+  width: 100vw;
+  height: auto;
+}
+
+.bttn {
+  display: flex;
+  justify-content: space-evenly;
+}

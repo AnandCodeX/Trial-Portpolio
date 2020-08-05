@@ -1,0 +1,94 @@
+.contact {
+  position: relative;
+  height: 100vh;
+  top: -8vh;
+}
+
+.contact div {
+  padding: 0;
+}
+
+.contact .hnames {
+  font-size: 10vw;
+  position: relative;
+  left: 25vw;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: -25px;
+  background-color: transparent;
+  padding: 20px auto;
+  width: 35vw;
+  height: 68vh;
+  border: 2px solid rgb(179, 108, 3);
+  box-shadow: 0 2px 5px rgb(179, 108, 3);
+  border-radius: 5px;
+}
+
+.contactForm input[type="text"],
+.contactForm input[type="email"],
+.contactForm textarea {
+  width: 30vw;
+  height: 2.5vw;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background: rgb(49, 49, 49);
+  margin: 5px auto;
+  padding: 10px auto;
+  font-size: 1.4vw;
+  font-style: oblique;
+}
+
+.contactForm textarea {
+  height: 30vh;
+  font-size: 1.3vw;
+}
+
+.contactForm input[type="text"]::placeholder,
+.contactForm input[type="email"]::placeholder,
+.contactForm textarea::placeholder {
+  background-color: rgb(49, 49, 49);
+  border-color: rgb(49, 49, 49);
+  font-size: 1.5vw;
+}
+
+.contactForm input[type="text"],
+.contactForm input[type="email"],
+.contactForm textarea {
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -moz-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+  border: 1px solid #aaa;
+  color: aliceblue;
+}
+
+.contactForm input:focus,
+.contactForm textarea:focus {
+  outline: 0;
+  border: 1px solid #aaa;
+  color: white;
+  padding: 0 5px;
+}
+
+::-webkit-input-placeholder {
+  color: #888;
+}
+
+:-moz-placeholder {
+  color: #888;
+}
+
+::-moz-placeholder {
+  color: #888;
+}
+
+:-ms-input-placeholder {
+  color: white;
+}
+
+.contactSubmitBtn {
+  margin: auto;
+}

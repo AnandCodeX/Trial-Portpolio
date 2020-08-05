@@ -7,8 +7,8 @@
 .cardBody {
   display: inline-flex;
   justify-content: space-evenly;
-
-  min-width: 300px;
+  max-width: 300px;
+  margin-top: 20px;
 }
 
 .room {
@@ -24,6 +24,7 @@
 }
 .imgContainer img {
   width: 20vw;
+  height: 13vw;
   display: block;
   transition: var(--mainTransition);
 }

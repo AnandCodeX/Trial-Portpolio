@@ -8,9 +8,9 @@ const BtnCard = (props) => {
     <Auxi>
       <div className={styles.btnCard}>
         <div className={styles.bttn}>
-          <Bttn>Web Designing</Bttn>
-          <Bttn>Web Animation</Bttn>
-          <Bttn>React Projects</Bttn>
+          <Bttn clicked={props.onClickBtn} >Web Designing</Bttn>
+          <Bttn clicked={props.onClickBtn} >Web Animation</Bttn>
+          <Bttn clicked={props.onClickBtn} >React Projects</Bttn>
         </div>
       </div>
     </Auxi>

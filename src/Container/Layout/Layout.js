@@ -1,13 +1,14 @@
-import React /* , { useState } */ from "react";
+import React from "react";
 
 import Auxi from "../../hoc/Auxi/Auxi";
 import styles from "./Layout.module.css";
 import Navbar from "../../Component/Navbar/Navbar";
 import Intro from "../Pages/Intro";
 import About from "../Pages/About";
-import Skills from "../Pages/Skills";
+import Skills from "../Pages/skills";
 import Work from "../Pages/Work";
 import { Provider } from "../../context/Context";
+import Contact from "../Pages/Contact";
 
 const Layout = (props) => {
   const allID = {
@@ -27,14 +28,21 @@ const Layout = (props) => {
         <div id={allID.intro}>
           <Intro />
         </div>
-        <div id={allID.about} /* {allID.about} */>
+        <div id={allID.about} className={styles.aboutCall}>
           <About />
         </div>
-        <div id={allID.skills}>
+        <div id={allID.skills} className={styles.skillsCall}>
           <Skills />
         </div>
-        <div id={allID.work}>
+        <div id={allID.work} className={styles.workCall}>
           <Work />
+        </div>
+        <div id={allID.contact} className={styles.contactCall}>
+          <Contact />
+        </div>
+        <div className={styles.line}>
+          <hr />
+          <p>Thank you for Visiting ... </p>
         </div>
       </div>
     </Auxi>
